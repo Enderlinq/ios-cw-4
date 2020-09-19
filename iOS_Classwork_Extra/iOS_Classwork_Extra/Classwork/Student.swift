@@ -15,30 +15,37 @@ import Foundation
 /// 2. track: String
 /// 3. gender: String
 
-//struct ...
+struct Student{
+    var Name: String
+    var Track: String
+    var Gender: String
+    
+    // MARK:  2️⃣ قم بإنشاء دالة بداخل الهيكل باسم imageName()
+    /**
+    لدينا صور في داخل مجل `Assets.xcassets`
+     - هناك صورة  لولد باسم `boyProfileImage`
+      - وهناك صورة أخرى لبنت باسم `girlProfileImage`
+     
+     
+    قم بكتابة دالة method بداخل الستركت Student، ترجع نص من نوع String، باسم imageName
+      - يكون هذا النص يساوي  `boyProfileImage` في حال كان gender قيمته "boy"
+     - يكون هذا النص يساوي  `girlProfileImage` في حال كان gender قيمته "girl"
+     */
 
+    
+    func imageName() -> String{
+        if Gender == "boy"{
+            return "boyProfileImage"
+        }
+        else if Gender == "girl"{
+            return "girlProfileImage"
+        }
+        else {
+            return "profileimage2"
+        }
 
-
-
-
-// MARK:  2️⃣ قم بإنشاء دالة بداخل الهيكل باسم imageName()
-/**
-لدينا صور في داخل مجل `Assets.xcassets`
- - هناك صورة  لولد باسم `boyProfileImage`
-  - وهناك صورة أخرى لبنت باسم `girlProfileImage`
- 
- 
-قم بكتابة دالة method بداخل الستركت Student، ترجع نص من نوع String، باسم imageName
-  - يكون هذا النص يساوي  `boyProfileImage` في حال كان gender قيمته "boy"
- - يكون هذا النص يساوي  `girlProfileImage` في حال كان gender قيمته "girl"
- */
-
-
-
-
-
-
-
+    }
+}
 
 
 // MARK: 3️⃣ قم بكتابة مصفوفة أسفل هذا السطر تحتوي على ثلاثة طلاب كالتالي:
@@ -48,14 +55,12 @@ import Foundation
  3. name:محمد علي,  track: Android,  gender: boy
  */
 
-// كتبنالك ياها عشان لا تقول (مووعاريف أكتب مصفوففة وااااع 😭)
-// امسح الكود واكتبه بطريقتك المبدعة 😍
-//var students: [Student] =
-//    [
-//        Student(...
-//        Student(...
-//        Student(...
-//    ]
+var students: [Student] =
+[
+    Student(Name: "Mohammad Khalid", Track: "Android", Gender: "boy"),
+    Student(Name: "Moudhi Sheshtar", Track: "Web", Gender: "girl"),
+    Student(Name: "Farah Al-Bader", Track: "iOS", Gender: "girl")
+]
 
 
 

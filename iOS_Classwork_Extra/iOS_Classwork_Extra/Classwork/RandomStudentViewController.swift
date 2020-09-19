@@ -19,8 +19,8 @@ class RandomStudentViewController: UIViewController {
         
         let randomStudent = students.randomElement()!
         
-        let randomStudentName = randomStudent.name
-        let randomStudentTrack = randomStudent.track
+        let randomStudentName = randomStudent.Name
+        let randomStudentTrack = randomStudent.Track
                 
         self.nameLabel.text = randomStudentName
         self.trackLabel.text =  randomStudentTrack
